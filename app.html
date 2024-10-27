@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Receitas de Bolo</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o CSS externo -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>🍰 Pesquisa de Receitas de Bolo</h1>
+        <input type="text" id="query" placeholder="Digite o nome do bolo...">
+        <button onclick="buscarReceita()">Buscar Receita</button>
+
+        <!-- Efeito de carregamento (invisível por padrão) -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            Carregando...
+        </div>
+
+        <!-- Contêiner da receita que será exibida -->
+        <div class="recipe-container" id="resultado" style="display: none;"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- Link para o arquivo JS externo -->
+</body>
+
+</html>
